@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#0b0f2a" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Ccircle cx=%2732%27 cy=%2732%27 r=%2730%27 fill=%27%23ffd23f%27/%3E%3Ctext x=%2732%27 y=%2744%27 font-size=%2736%27 text-anchor=%27middle%27 font-family=%27Arial Black%27 fill=%27%230b0f2a%27%3EΩ%3C/text%3E%3C/svg%3E" />
+    <title>Omega Rush: Esquadrão de Heróis</title>
+    <link rel="stylesheet" href="./src/ui/style.css" />
+  </head>
+  <body>
+    <div id="jogo"></div>
+
+    <!-- Camada de interface (HTML por cima do canvas) -->
+    <div id="ui">
+      <div id="hud" class="oculto">
+        <div id="hud-topo">
+          <div id="hud-distancia" class="pilula">0 m</div>
+          <div id="hud-recorde" class="pilula pequena">Recorde 0 m</div>
+        </div>
+      </div>
+
+      <div id="contador-esquadrao" class="oculto">1</div>
+      <div id="flutuantes"></div>
+
+      <div id="tela-inicio" class="tela">
+        <div class="logo">
+          <span class="logo-omega">OMEGA</span>
+          <span class="logo-rush">RUSH</span>
+          <span class="logo-sub">Esquadrão de Heróis</span>
+        </div>
+        <div class="dica-toque">Arraste para os lados para escolher os portões</div>
+        <button id="btn-jogar" class="botao botao-grande">JOGAR</button>
+        <div class="assinatura">Akko's Corporation</div>
+      </div>
+
+      <div id="tela-fim" class="tela oculto">
+        <div class="titulo-fim">ESQUADRÃO DERROTADO</div>
+        <div id="fim-distancia" class="valor-fim">0 m</div>
+        <div id="fim-maximo" class="sub-fim">Maior esquadrão: 0</div>
+        <button id="btn-denovo" class="botao botao-grande">TENTAR DE NOVO</button>
+        <div class="assinatura">Akko's Corporation</div>
+      </div>
+
+      <div id="splash" class="tela splash">
+        <div class="splash-akko">Akko's Corporation</div>
+        <div class="splash-apresenta">apresenta</div>
+      </div>
+    </div>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

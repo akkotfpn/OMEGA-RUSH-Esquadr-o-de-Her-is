@@ -1,0 +1,9 @@
+{
+  "appId": "com.akkoscorp.omegarush",
+  "appName": "Omega Rush",
+  "webDir": "dist",
+  "backgroundColor": "#0b0f2a",
+  "android": {
+    "backgroundColor": "#0b0f2a"
+  }
+}
